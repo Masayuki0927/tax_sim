@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>シミュレーション結果</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -11,7 +12,6 @@
             font-size: 2.5rem;
             margin-bottom: 30px;
         }
-
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZXSYKN2VP"></script>
@@ -26,13 +26,13 @@
 
     {% include 'master.html' %}
 
-    <div class="container bg-light p-4 mb-4">
+    <div class="container-fluid bg-light p-4 mb-4" style="padding-top: 100px;">
         <h3>納める税金：</h3>
         <div class="tax-block">{{ tax }} 円</div>
         <span class="disclaimer">※金額がマイナスの場合はその金額分が還付されます</span>
     </div>
 
-    <div class="container">
+    <div class="container-fluid bg-white p-4 mb-4">
         <h4 style="margin-bottom: 15px;">シミュレーションの計算プロセス</h4>
         <div class="calc-div">
             <span class="calc-key">給与合計：{{income_total}}円= 売上({{sales}}円) + 給与所得({{income_modified}}円)</span>
@@ -58,7 +58,7 @@
     </div>
 
     
-    <div class="container">
+    <div class="container-fluid bg-white p-4 mb-4">
         <h4 style="margin-bottom: 15px;">計算式の参考にしたもの</h4>
         <p class="links">
             <a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm" target="_blank">給与所得控除について</a><br>
@@ -68,7 +68,7 @@
             <a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1155.htm" target="_blank">ふるさと納税(寄附金控除)について</a><br>
         </p>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <p><a href="#" onclick="goBack()" class="back-button">元のページに戻る</a></p>
         <!-- <p><button onclick="goBack()">元のページに戻る</button></p> -->
     </div>

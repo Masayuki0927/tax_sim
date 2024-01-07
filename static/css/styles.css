@@ -1,6 +1,41 @@
-body {
-    padding: 50px;
+@media (max-width: 576px) {
+    /* スマートフォンサイズのスタイルを適用 */
+    body {
+      font-size: 12px;
+    }
+  }
+
+@media (min-width: 576px) {
+.container {
+    max-width: 540px; /* これはBootstrapのデフォルト値です。必要に応じて調整してください。 */
 }
+}
+
+@media (min-width: 768px) {
+.container {
+    max-width: 720px; /* これはBootstrapのデフォルト値です。必要に応じて調整してください。 */
+}
+}
+
+@media (min-width: 992px) {
+.container {
+    max-width: 960px; /* これはBootstrapのデフォルト値です。必要に応じて調整してください。 */
+}
+}
+
+@media (min-width: 1200px) {
+.container {
+    max-width: none; /* 余白をなくすためには 'none' または '100%' に設定します。 */
+}
+}
+  
+
+body {
+    padding: 0px;
+    margin-top: 70px;
+}
+
+
 
 form {
     max-width: 400px;
@@ -32,7 +67,8 @@ input::placeholder {
 }
 
 .disclaimer {
-    font-size: 80%;
+    font-size: 100%;
+    padding-top: 10px;
 }
 
 .links {
