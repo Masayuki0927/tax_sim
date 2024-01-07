@@ -1,0 +1,68 @@
+body {
+    padding: 50px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+input::placeholder {
+    color: #ccc; /* 薄い灰色 */
+}
+
+.container {
+    text-align: left;
+    margin-top: 30px;
+}
+
+
+.tax-block {
+    border: 2px solid green; /* 枠線を追加 */
+    padding: 20px; /* 内側の余白を追加 */
+    font-size: 2rem;
+    color: green;
+    margin-top: 20px;
+}
+
+.disclaimer {
+    font-size: 80%;
+}
+
+.links {
+    font-size: 90%;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #888;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color:#666;
+}
+
+.calc-key {
+    display: block;
+}
+
+.calc-key_indent {
+    margin-left: 30px;
+}    
+
+.calc-div {
+    margin-left: 20px;
+}
